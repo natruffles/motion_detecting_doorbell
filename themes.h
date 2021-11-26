@@ -3,6 +3,8 @@
  * Code by : B.Aswinth Raj
  * Dated: 15-06-2017
  * Website: CircuitDigest.com
+ * 
+ * Structure at the bottom by natruffles
  */
 
 //##############**"HE IS A PIRATE" Theme song of Pirates of caribbean**##############//
@@ -89,3 +91,14 @@ int Titanic_duration[] = {
 };
 //###########End of Titanic#############//
 
+struct Song {
+  String songName;
+  int* notes;
+  int* noteDurations;
+  int numberOfNotes;
+};
+
+Song pirates = {"Pirates of the Carribean", Pirates_note, Pirates_duration, 85};
+Song crazyFrog = {"Crazy Frog", CrazyFrog_note, CrazyFrog_duration, 31};
+Song marioUW = {"Mario Underwater", MarioUW_note, MarioUW_duration, 56};
+Song titanic = {"Titanic", Titanic_note, Titanic_duration, 74};
